@@ -42,11 +42,11 @@ const Home = ({ route }) => {
             }}
           >
             <Icon
-              name="heartbeat"
+              name="paint-brush"
               type="font-awesome"
               color="#ccc"
               onPress={() => console.log("hello")}
-              size={50}
+              size={40}
             />
             <Text>Servicio</Text>
           </View>
@@ -59,11 +59,11 @@ const Home = ({ route }) => {
             }}
           >
             <Icon
-              name="heartbeat"
+              name="bath"
               type="font-awesome"
               color="#ccc"
               onPress={() => console.log("hello")}
-              size={50}
+              size={40}
             />
             <Text>Servicio</Text>
           </View>
@@ -76,11 +76,11 @@ const Home = ({ route }) => {
             }}
           >
             <Icon
-              name="heartbeat"
+              name="shower"
               type="font-awesome"
               color="#ccc"
               onPress={() => console.log("hello")}
-              size={50}
+              size={40}
             />
             <Text>Servicio</Text>
           </View>
@@ -93,11 +93,11 @@ const Home = ({ route }) => {
             }}
           >
             <Icon
-              name="heartbeat"
+              name="key"
               type="font-awesome"
               color="#ccc"
               onPress={() => console.log("hello")}
-              size={50}
+              size={40}
             />
             <Text>Servicio</Text>
           </View>
@@ -114,11 +114,11 @@ const Home = ({ route }) => {
             }}
           >
             <Icon
-              name="heartbeat"
+              name="building"
               type="font-awesome"
               color="#ccc"
               onPress={() => console.log("hello")}
-              size={50}
+              size={40}
             />
             <Text>Servicio</Text>
           </View>
@@ -131,11 +131,11 @@ const Home = ({ route }) => {
             }}
           >
             <Icon
-              name="heartbeat"
+              name="briefcase"
               type="font-awesome"
               color="#ccc"
               onPress={() => console.log("hello")}
-              size={50}
+              size={40}
             />
             <Text>Servicio</Text>
           </View>
@@ -148,11 +148,11 @@ const Home = ({ route }) => {
             }}
           >
             <Icon
-              name="heartbeat"
+              name="camera-retro"
               type="font-awesome"
               color="#ccc"
               onPress={() => console.log("hello")}
-              size={50}
+              size={40}
             />
             <Text>Servicio</Text>
           </View>
@@ -165,11 +165,11 @@ const Home = ({ route }) => {
             }}
           >
             <Icon
-              name="heartbeat"
+              name="cutlery"
               type="font-awesome"
               color="#ccc"
               onPress={() => console.log("hello")}
-              size={50}
+              size={40}              
             />
             <Text>Servicio</Text>
           </View>
