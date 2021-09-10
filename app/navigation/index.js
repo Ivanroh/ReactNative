@@ -12,7 +12,7 @@ function Navigation() {
         <Drawer.Screen
           name="Home"
           component={Home}
-          options={{ headerShown: false }}
+          options={{ headerShown: true, headerTintColor:"#48b9be", headerStyle:{borderBottomWidth:0}, headerTitle:"" }}
         />
       </Drawer.Navigator>
     </NavigationContainer>
