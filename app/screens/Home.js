@@ -1,7 +1,7 @@
 import React from "react";
 import { View, StyleSheet, Text, Image, TouchableOpacity } from "react-native";
-import { Input } from "react-native-elements";
-import Icon from "react-native-vector-icons/FontAwesome";
+import InputProvince from "../components/inputProvince";
+import Item from "../components/item";
 
 const Home = ({ route }) => {
   // const valores = route.params;
@@ -33,146 +33,18 @@ const Home = ({ route }) => {
         </Text>
         {/* Primera lista */}
         <View style={{ flex: 1, flexDirection: "row" }}>
-          <View
-            style={{
-              flex: 1,
-              backgroundColor: "#fff",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <Icon
-              name="paint-brush"
-              type="font-awesome"
-              color="#ccc"
-              onPress={() => console.log("hello")}
-              size={40}
-            />
-            <Text>Servicio</Text>
-          </View>
-          <View
-            style={{
-              flex: 1,
-              backgroundColor: "#fff",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <Icon
-              name="bath"
-              type="font-awesome"
-              color="#ccc"
-              onPress={() => console.log("hello")}
-              size={40}
-            />
-            <Text>Servicio</Text>
-          </View>
-          <View
-            style={{
-              flex: 1,
-              backgroundColor: "#fff",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <Icon
-              name="shower"
-              type="font-awesome"
-              color="#ccc"
-              onPress={() => console.log("hello")}
-              size={40}
-            />
-            <Text>Servicio</Text>
-          </View>
-          <View
-            style={{
-              flex: 1,
-              backgroundColor: "#fff",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <Icon
-              name="key"
-              type="font-awesome"
-              color="#ccc"
-              onPress={() => console.log("hello")}
-              size={40}
-            />
-            <Text>Servicio</Text>
-          </View>
+          <Item icon="paint-brush" />
+          <Item icon="bath" />
+          <Item icon="shower" />
+          <Item icon="key" />
         </View>
         {/* Primera lista */}
         {/* Segunda lista */}
         <View style={{ flex: 1, flexDirection: "row" }}>
-          <View
-            style={{
-              flex: 1,
-              backgroundColor: "#fff",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <Icon
-              name="building"
-              type="font-awesome"
-              color="#ccc"
-              onPress={() => console.log("hello")}
-              size={40}
-            />
-            <Text>Servicio</Text>
-          </View>
-          <View
-            style={{
-              flex: 1,
-              backgroundColor: "#fff",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <Icon
-              name="briefcase"
-              type="font-awesome"
-              color="#ccc"
-              onPress={() => console.log("hello")}
-              size={40}
-            />
-            <Text>Servicio</Text>
-          </View>
-          <View
-            style={{
-              flex: 1,
-              backgroundColor: "#fff",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <Icon
-              name="camera-retro"
-              type="font-awesome"
-              color="#ccc"
-              onPress={() => console.log("hello")}
-              size={40}
-            />
-            <Text>Servicio</Text>
-          </View>
-          <View
-            style={{
-              flex: 1,
-              backgroundColor: "#fff",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <Icon
-              name="cutlery"
-              type="font-awesome"
-              color="#ccc"
-              onPress={() => console.log("hello")}
-              size={40}              
-            />
-            <Text>Servicio</Text>
-          </View>
+          <Item icon="building" />
+          <Item icon="briefcase" />
+          <Item icon="camera-retro" />
+          <Item icon="cutlery" />
         </View>
         {/* Segunda lista */}
       </View>
@@ -185,21 +57,7 @@ const Home = ({ route }) => {
           <Text style={{ textAlign: "center", fontWeight: "bold" }}>
             ¿Dónde?
           </Text>
-          <View
-            style={{
-              flex: 1,
-              alignItems: "center",
-              justifyContent: "center",
-              padding: 20,
-            }}
-          >
-            <Input
-              placeholder="En toda España"
-              leftIcon={<Icon name="map-marker" size={24} color="#E42841" />}
-              rightIcon={<Icon name="chevron-down" size={14} color="#ccc" />}
-              style={{ textAlign: "center" }}
-            />
-          </View>
+          <InputProvince />
         </View>
         <View
           style={{
@@ -214,9 +72,6 @@ const Home = ({ route }) => {
           </TouchableOpacity>
         </View>
       </View>
-      {/* DONDE Y BOTON BUSCAR */}
-
-      {/* <View style={{flex:1, backgroundColor:"#ddd3c3"}}><Text>Buscar</Text></View> */}
     </View>
   );
 };
@@ -224,6 +79,8 @@ const Home = ({ route }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    paddingHorizontal: 10,
+    backgroundColor: "#ffffff",
     // marginTop: StatusBar.currentHeight,
     // backgroundColor: "#fff",
     // alignItems: "center",
